@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffe6f0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: pink;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.btn {
+  padding: 10px 20px;
+  background: #ff4d88;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-text {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Doctors */
+.doctors {
+  padding: 50px 10%;
+  text-align: center;
+}
+.doctor-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Services */
+.services {
+  padding: 50px 10%;
+  text-align: center;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.service {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Team */
+.team {
+  padding: 50px 10%;
+  text-align: center;
+}
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.team-members img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Promo */
+.promo {
+  padding: 50px;
+  background: #ffb6c1;
+  text-align: center;
+}
+
+/* Blog */
+.blog {
+  padding: 50px 10%;
+  text-align: center;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.blog-post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #ff4d88;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
