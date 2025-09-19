@@ -11,13 +11,56 @@ body {
   color: #333;
 }
 
-/* Navbar */
-.navbar {
+.container {
+  width: 100%;
+  margin: auto;
+  padding-left: var(--col-gap);
+  justify-content: space-between;
+  padding-right: var(--col-gap);
+  background: none;
+}
+
+
+
+.row {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--col-gap) * -1);
+  margin-right: calc(var(--col-gap) * -1);
+}
+[class^="col-"] {
+  padding-left: var(--col-gap);
+  padding-right: var(--col-gap);
+  box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contact .contact-icon i {
+  font-size: 20px;
+  padding: 13px 16px;
+  background-color: #ffffff40;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.contact .contact-main {
+  width: auto;
+}
+
+.navbar {
+  margin-top: 6rem;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  background: pink;
+  padding: 10px 0%;
+  background: rgb(248, 228, 231);
+  -webkit-backdrop-filter: blur(4.6px);
+  backdrop-filter: blur(4.6px);
 }
 .navbar .logo {
   font-size: 24px;
@@ -43,7 +86,12 @@ body {
   text-decoration: none;
 }
 
-/* Hero */
+
+logo-light {
+  display: none;
+}
+
+
 .hero {
   height: 80vh;
   background: url('hero.jpg') center/cover no-repeat;
@@ -52,6 +100,17 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
+}
+
+.hero .bg-img img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
 .hero-text {
   background: rgba(0, 0, 0, 0.4);
